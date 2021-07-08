@@ -12,6 +12,7 @@
         <module>javaweb-01</module>
         <module>javaweb-02</module>
         <module>javaweb-03</module>
+        <module>javaweb-04</module>
     </modules>
 
     <properties>

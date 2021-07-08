@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+  <display-name>Archetype Created Web Application</display-name>
+
+<!--  配置应用的初始化参数-->
+  <context-param>
+    <param-name>url</param-name>
+    <param-value>jdbc:mysql://localhost:3306/mybatis</param-value>
+  </context-param>
+
+  <servlet>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>com.kuang.servlet.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>get</servlet-name>
+    <servlet-class>com.kuang.servlet.GetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>get</servlet-name>
+    <url-pattern>/get</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>hello2</servlet-name>
+    <servlet-class>com.kuang.servlet.HelloServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hello2</servlet-name>
+    <url-pattern>/hello2</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>hello3</servlet-name>
+    <servlet-class>com.kuang.servlet.HelloServlet3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hello3</servlet-name>
+    <url-pattern>/hello3</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>hello4</servlet-name>
+    <servlet-class>com.kuang.servlet.HelloServlet4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hello4</servlet-name>
+    <url-pattern>/hello4</url-pattern>
+  </servlet-mapping>
+</web-app>
