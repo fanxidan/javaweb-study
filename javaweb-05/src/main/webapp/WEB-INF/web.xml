@@ -13,4 +13,13 @@
     <servlet-name>filedown</servlet-name>
     <url-pattern>/file</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>image</servlet-name>
+    <servlet-class>com.kuang.servlet.ImageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>image</servlet-name>
+    <url-pattern>/image</url-pattern>
+  </servlet-mapping>
 </web-app>

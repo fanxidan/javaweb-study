@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="javaweb-06" />
         <module name="javaweb-05" />
         <module name="javaweb-04" />
         <module name="javaweb-03" />
