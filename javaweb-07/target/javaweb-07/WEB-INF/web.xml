@@ -47,4 +47,18 @@
     <servlet-name>Sessiondemo2</servlet-name>
     <url-pattern>/session02</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Sessiondemo3</servlet-name>
+    <servlet-class>com.kuang.servlet.SessionDemo03</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Sessiondemo3</servlet-name>
+    <url-pattern>/session03</url-pattern>
+  </servlet-mapping>
+
+<!--  设置session默认的失效时间-->
+  <session-config>
+    <session-timeout>12</session-timeout>
+  </session-config>
 </web-app>
