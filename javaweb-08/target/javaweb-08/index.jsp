@@ -34,8 +34,5 @@
 
 <%--定制错误页面--%>
 <%@ page errorPage="500error.jsp" %>
-<%!
-    private int f = 1/0;
-%>
 </body>
 </html>

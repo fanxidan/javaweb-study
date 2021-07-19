@@ -14,6 +14,7 @@
         <module name="javaweb-07" />
         <module name="javaweb-06" />
         <module name="javaweb-05" />
+        <module name="javaweb-09" />
       </profile>
     </annotationProcessing>
   </component>
