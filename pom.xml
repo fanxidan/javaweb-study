@@ -18,6 +18,7 @@
         <module>javaweb-07</module>
         <module>javaweb-08</module>
         <module>javaweb-09</module>
+        <module>javaweb-10</module>
     </modules>
 
     <properties>
