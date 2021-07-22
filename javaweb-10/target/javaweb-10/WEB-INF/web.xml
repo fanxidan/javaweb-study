@@ -32,4 +32,8 @@
   <listener>
     <listener-class>com.kuang.listener.OnlineCountListener</listener-class>
   </listener>
+<!--  配置session销毁时间-->
+  <session-config>
+    <session-timeout>1</session-timeout>
+  </session-config>
 </web-app>
