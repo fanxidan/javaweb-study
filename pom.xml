@@ -21,6 +21,7 @@
         <module>javaweb-10</module>
         <module>javaweb-11</module>
         <module>javaweb-12</module>
+        <module>javaweb-13_smbms</module>
     </modules>
 
     <properties>
