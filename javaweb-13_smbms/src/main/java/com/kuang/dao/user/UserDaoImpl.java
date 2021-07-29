@@ -19,7 +19,7 @@ public class UserDaoImpl implements UserDao{
         if (connection!=null){
             String sql = "select * from smbms_user where userCode=?";
             Object[] params = {userCode};
-            System.out.println(userPassword);
+            System.out.println("输入的密码：" + userPassword);
             rs = BaseDao.execute(connection, pstm, rs, sql, params);
             if (rs.next()){
                 user = new User();
