@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.sql.*;
 import java.util.Properties;
 
-//操作数据库的公共类
+//操作数据库的公共类：创建连接池，查询，释放资源，关闭连接池
 public class BaseDao {
     private static String driver;
     private static String url;

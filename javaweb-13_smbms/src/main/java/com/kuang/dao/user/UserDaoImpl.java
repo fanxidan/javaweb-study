@@ -2,6 +2,7 @@ package com.kuang.dao.user;
 
 import com.kuang.dao.BaseDao;
 import com.kuang.pojo.User;
+import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 //用户的实现类
+//改方法用于根据userCode和userPassword来查询数据库中是否有该用户
 public class UserDaoImpl implements UserDao{
     @Override
     public User getLoginUser(Connection connection, String userCode, String userPassword) throws SQLException {
@@ -21,6 +23,7 @@ public class UserDaoImpl implements UserDao{
             Object[] params = {userCode};
             System.out.println("输入的密码：" + userPassword);
             rs = BaseDao.execute(connection, pstm, rs, sql, params);
+            //查询到的结果赋给 user对象
             if (rs.next()){
                 user = new User();
                 user.setId(rs.getInt("id"));
@@ -38,9 +41,12 @@ public class UserDaoImpl implements UserDao{
                 user.setModifyDate(rs.getTimestamp("modifyDate"));
             }
             BaseDao.closeResource(null,pstm,rs);
-            if (!user.getUserPassword().equals(userPassword))
-                user=null;
+//            if (!user.getUserPassword().equals(userPassword)){
+//                System.out.println("UserDaoImpl: 未找到用户");
+//                user=null;
+//            }
         }
         return user;
     }
+
 }

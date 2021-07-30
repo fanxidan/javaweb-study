@@ -23,6 +23,7 @@ public class UserServiceImpl implements UserService {
         User user = null;
 
         try {
+            System.out.println("进入UserServiceImpl的login方法：");
             connection = BaseDao.getConnection();
             //通过业务层调用对应具体的数据库操作
             user = userDao.getLoginUser(connection, userCode, userPassword);

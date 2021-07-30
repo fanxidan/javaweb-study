@@ -22,6 +22,8 @@ public class LoginServlet extends HttpServlet {
         //和数据库中用户名密码对比，调用业务层
         UserService userService = new UserServiceImpl();
         User user = userService.login(userCode, userPassword);
+        System.out.println("进入LoginServlet userCode:" + userCode);
+        System.out.println("进入LoginServlet userPassword:" + userPassword);
         if (user != null){//查有此人
             //将用户的信息放到session里面
             req.getSession().setAttribute(Constants.USER_SESSION, user);
