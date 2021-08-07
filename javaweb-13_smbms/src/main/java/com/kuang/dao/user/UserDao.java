@@ -9,4 +9,7 @@ import java.sql.SQLException;
 public interface UserDao {
     //得到要登录的用户
     User getLoginUser(Connection connection, String userCode, String userPassword) throws SQLException;
+
+    //修改当前用户的密码
+    int updatePwd(Connection connection, int id, String password) throws SQLException;
 }

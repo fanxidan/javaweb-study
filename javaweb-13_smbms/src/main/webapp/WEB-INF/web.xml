@@ -29,6 +29,16 @@
     <servlet-name>LogoutServlet</servlet-name>
     <url-pattern>/jsp/logout.do</url-pattern>
   </servlet-mapping>
+
+  <!--修改密码页面点击后执行UserServlet-->
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.kuang.servlet.user.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/jsp/user.do</url-pattern>
+  </servlet-mapping>
   <!--字符编码过滤器,所有请求都会被过滤执行CharacterEncodingFilter的方法-->
   <filter>
     <filter-name>CharacterEncodingFilter</filter-name>
@@ -53,6 +63,11 @@
   <welcome-file-list>
     <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
+
+  <!--默认session过期时间-->
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
 </web-app>
 
 
