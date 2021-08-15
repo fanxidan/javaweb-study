@@ -30,7 +30,7 @@ public class BaseDao {
     }
 
     //获取数据库的连接
-    public static Connection getConnection() throws ClassNotFoundException, SQLException {
+    public static Connection getConnection(){
         //初始化给定的类。而我们给定的 MySQL 的 Driver 类中，它在静态代码块中通过 JDBC 的 DriverManager 注册了一下驱动
         Connection connection = null;
         try {

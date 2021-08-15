@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
             connection = BaseDao.getConnection();
             //通过业务层调用对应具体的数据库操作
             user = userDao.getLoginUser(connection, userCode, userPassword);
-        }catch (SQLException | ClassNotFoundException e){
+        }catch (SQLException e){
             e.printStackTrace();
         }finally {
             BaseDao.closeResource(connection,null,null);
@@ -57,7 +57,7 @@ public class UserServiceImpl implements UserService {
 
     //查询记录数
     @Override
-    public int getUserCount(String username, int userRole) throws SQLException, ClassNotFoundException {
+    public int getUserCount(String username, int userRole) {
         Connection connection=null;
         int count = 0;
         try {

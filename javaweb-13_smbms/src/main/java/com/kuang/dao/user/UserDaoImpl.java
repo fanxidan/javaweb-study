@@ -1,6 +1,7 @@
 package com.kuang.dao.user;
 
 import com.kuang.dao.BaseDao;
+import com.kuang.pojo.Role;
 import com.kuang.pojo.User;
 import com.mysql.cj.util.StringUtils;
 import org.junit.jupiter.api.Test;
