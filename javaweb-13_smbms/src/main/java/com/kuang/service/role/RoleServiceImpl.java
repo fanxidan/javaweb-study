@@ -26,7 +26,7 @@ public class RoleServiceImpl implements RoleService {
         try {
             connection = BaseDao.getConnection();
             roleList = roleDao.getRoleList(connection);
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             BaseDao.closeResource(connection,null,null);

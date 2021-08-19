@@ -9,7 +9,8 @@
         </div>
         <div class="providerAdd">
             <form id="userForm" name="userForm" method="post" action="${pageContext.request.contextPath }/jsp/user.do">
-				<input type="hidden" name="method" value="add">
+				<%--method:add--%>
+                <input type="hidden" name="method" value="add">
                 <!--div的class 为error是验证错误，ok是验证成功-->
                 <div>
                     <label for="userCode">用户编码：</label>
