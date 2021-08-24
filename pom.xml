@@ -23,6 +23,7 @@
         <module>javaweb-12</module>
         <module>javaweb-13_smbms</module>
         <module>javaweb-14</module>
+        <module>javaweb-15</module>
     </modules>
 
     <properties>
